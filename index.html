@@ -1,23 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Michael Weiner">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Hi, I am Michael. I am currently a Computer Science student at the University of Minnesota Twin Cities.">
+      <meta name="author" content="Michael Weiner">
 
-    <title>Hi, I am Michael.</title>
+      <title>Hi, I am Michael.</title>
+
+      <link rel="stylesheet" href="styles/home.css"> 
+      <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png">
   </head>
 
-  <body>
-    <header>
-    
+  <body class="font-mono">
+
+    <header class="text-white">
+      <!-- Top Bar -->
+      <nav class="mx-auto bg-gray-100 text-mwslate flex flex-wrap p-3 flex-col md:flex-row items-center">
+        <div class="float-left mr-0 pb-3 font-bold md:mr-auto md:pb-0 text-mwred hover:underline cursor-pointer">
+          <a href="mailto:michael.weiner@hey.com" target="_blank">michael.weiner@hey.com</a>
+        </div>
+        <div class="float-right font-bold">
+          <div class="flex justify-center text-base leading-6 sm:text-lg sm:leading-7 ">
+            <div class="text-center mx-2 text-mwred font-bold hover:underline cursor-pointer">
+              <a href="/resume">Resume</a>
+            </div>
+            <div class="text-center mx-2 text-mwred font-bold hover:underline cursor-pointer">
+              <a href="https://github.com/mike-weiner" target="_blank">GitHub</a>
+            </div>
+            <div class="text-center mx-2 text-mwred font-bold hover:underline cursor-pointer">
+              <a href="https://gist.github.com/mike-weiner" target="_blank">Gists</a>
+            </div>
+            <div class="text-center mx-2 text-mwred font-bold hover:underline cursor-pointer">
+              <a href="https://linkedin.com/in/mike-weiner" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
+    
+    <main class="min-h-screen bg-gray-100 text-mw-slate">
+      <div>
+        <!-- Welcome -->
+        <div class="pt-12 pb-8 px-12">
+          <h2 class="mb-4 text-2xl font-medium">👋 Hi, I'm Michael Weiner.</h2>
+          <p class="text-l mb-4">I'm a student studying Computer Science (CS) <a href="https://cse.umn.edu/cs" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">@UMN-TC</a> with an emphasis on Software Engineering. I am thrilled to have accepted a Back End Developer Intern position <a href="https://www.ibm.com/us-en/" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">@IBM</a> for the Summer of 2022. I've previously interned <a href="https://www.preventicesolutions.com" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">@Preventice</a> as a software engineer with additional prior work experience as an independent website contractor <a href="https://www.helpingfeedpeople.org" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">@ChannelOne</a> and as a site builder <a href="https://worshiptimes.org" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">@WorshipTimes</a>.</p>
+          <p class="text-l mb-1">In my free time I enjoy learning about agriculture, catching a sunrise or sunset (preferably with a dog or two), doing some photography when it is convenient, and learning more about web3 and blockchain technologies. </p>
+        </div>
 
-      <h2>I hope you are having a great day!</h2>
-      <p>Congratulations! You've found a project that is just getting off the ground. Check back soon for an update.</p>
-      <p><a href="/test/">A Quick Test</a></p>
+        <!-- Recent Projects -->
+        <div class="px-12 py-2">
+          <h2 class="mb-4 text-2xl font-medium">📑 Recent Projects</h2>
+          
+          <div class="pb-8">
+            <p>[2022]</p>
+            <ul class="list-disc">
+              <li><a href="https://wordpress.org/plugins/display-event-locations-tec/" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">Display Event for The Events Calendar</a> - A published, open-source WordPress plugin that extends the functionality of an existing event management system with 100+ active users. <i class="font-bold">This project has been actively maintained since its creation in 2019.</i></li>
+            </ul>
+          </div>
+
+          <div class="pb-8">
+            <p>[2021]</p>
+            <ul class="list-disc">
+              <li><a href="https://github.com/mike-weiner/spam-classification-review" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">Review of Machine Learning (ML) Spam Classification Algorithms</a> - A research report on an experiment I ran to investigate and compare four ML email spam classification (binary classification) algorithms currently in use.</li>
+              <li><a href="https://www.kimt.com/news/local/17th-annual-empty-bowls-fundraisers-underway-for-channel-one-regional-food-bank/article_39c13209-dd8d-56b6-8125-53ef7251064f.html" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">Empty Bowls Ordering System (v2.0)</a> - Improved upon the first-generation ordering form for the local community food bank that raised a record $70,000+ in a critical fundraiser during the COVID-19 pandemic.</li>
+              <li><a href="https://github.com/mike-weiner/maw-resources" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">MAW Resources</a> - An open-source WordPress plugin that creates a custom 'Resources' post type to create an efficient, clean mechanism to display resources such as links to external websites, PDFs, or videos in a table format by category.</li>
+            </ul>
+          </div>
+
+          <div class="pb-8">
+            <p>[2020]</p>
+            <ul class="list-disc">
+              <li><a href="https://www.helpingfeedpeople.org/empty-bowls-to-go-raises-68000-to-address-food-insecurity/" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">Empty Bowls Ordering System (v1.0)</a> - Built the ordering form and automation to help a local community food bank raise a record $68,000+ in a first of its kind 100% to-go fundraiser format during the COVID-19 pandemic. </li>
+              <li><a href="https://github.com/mike-weiner/list-github-repositories" target="_blank" class="text-mwred font-bold hover:underline cursor-pointer">List GitHub Repositories</a> - An open-source WordPress plugin that uses a custom shortcode to allow for a clean way to display a list of a user's public GitHub repositories.</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
     </main>
-  </body>
 
+    <footer class="text-white" style="background-image: url('assets/footer-background.jpg');">
+      <div class="bg-black bg-opacity-60 px-5 py-8">
+        <div class="flex items-center">
+
+          <div class="mr-8 md:mr-auto">
+            <p>© 2020-2022 Michael Weiner</p>
+            <p>Brought online by <span class="cursor-pointer font-bold hover:text-gray-300"><a href="https://michaelweiner.org/">Michael Weiner - Making the web a better place, one project at a time.</a></span></p>
+            <p>Powered by <span class="cursor-pointer font-bold hover:text-gray-300"><a href="https://www.siteground.com" target="_blank" rel="nofollow">SiteGround</a></span> and <span class= "cursor-pointer font-bold hover:text-gray-300"><a href="https://tailwindcss.com" target="_blank" rel="nofollow">Tailwind CSS</a></span></p>
+            <p>Logo designed by <span class="cursor-pointer font-bold hover:text-gray-300"><a href="https://daniellaattinella.com" target="_blank" rel="nofollow">Danielle Attinella</a></span></p>
+          </div>
+
+          <div>
+            <a href="https://michaelweiner.org/"><img class="cursor-pointer w-32" src="assets/logo-mark-white.png" alt="White MW Logo"></a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect your account.">
+    <meta name="author" content="Michael Weiner">
+
+    <title>Michael Weiner — Connect</title>
+
+    <link rel="stylesheet" href="../styles/connect.css" /> 
+    <link rel="shortcut icon" type="image/jpg" href="../assets/favicon.png"/>
+  </head>
+
+  <body>
+    <main class="min-h-screen">
+      <div class="p-6 mx-auto page xsm:p-8 sm:p-9 md:p-16 bg-gr">
+  
+        <header class="mb-4 md:mb-6">
+          <div><a href="https://michaelweiner.org/"><img style="max-width: 10rem;" src="../assets/logo-mark.png"  alt="Michael Weiner's M and W Logo in Color"></a></div>
+          <h1 class="text-2xl font-semibold text-gray-750 pb-px">
+            Michael Weiner
+          </h1>
+        </header>
+
+        <div><hr class="border-1 border-black"></div>
+
+        <div class="mt-4">
+  
+          <!-- Connect Your Device -->
+          <section>
+            <div>
+  
+              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-mwslate">
+                CONNECT YOUR ACCOUNT
+              </h2>
+
+              <section class="mb-4.5">
+                <div class="pb-1.5 text-black">
+                  <h3 class="text-lg font-semibold">Authentication Code</h3>
+                  <p>Your authentication code is: <span id="mw-auth-code" class="font-bold"></span></p>
+                </div>
+              </section>
+              
+            </div>
+          </section>
+  
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-white print:hidden" style="background-image: url('../assets/footer-background.jpg');">
+      <div class="bg-black bg-opacity-60 px-5 py-8">
+        <div class="flex items-center">
+
+          <div class="mr-8 md:mr-auto">
+            <p>© 2020-2022 Michael Weiner</p>
+            <p>Brought online by <span class="cursor-pointer font-bold hover:text-gray-300"><a href="https://michaelweiner.org/">Michael Weiner - Making the web a better place, one project at a time.</a></span></p>
+            <p>Powered by <span class="cursor-pointer font-bold hover:text-gray-300"><a href="https://www.siteground.com" target="_blank" rel="nofollow">SiteGround</a></span> and <span class= "cursor-pointer font-bold hover:text-gray-300"><a href="https://tailwindcss.com" target="_blank" rel="nofollow">Tailwind CSS</a></span></p>
+            <p>Logo designed by <span class="cursor-pointer font-bold hover:text-gray-300"><a href="https://daniellaattinella.com" target="_blank" rel="nofollow">Danielle Attinella</a></span></p>
+          </div>
+
+          <div>
+            <a href="https://michaelweiner.org/"><img class="cursor-pointer w-32" src="../assets/logo-mark-white.png" alt="White MW Logo"></a>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const authcode = urlParams.get('code')
+      document.getElementById('mw-auth-code').textContent = authcode; 
+    </script>
+  </body>
+</html>
