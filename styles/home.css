@@ -90,6 +90,11 @@ Add the correct font weight in Edge and Safari.
 2. Correct the odd `em` font sizing in all browsers.
 */
 
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
 /*
 Add the correct font size in all browsers.
 */
@@ -235,21 +240,6 @@ video {
 /*
 Ensure the default browser behavior of the `hidden` attribute.
 */
-    /* h1, h2, h3, h4, h5, h6 {
-        font-family: 'DM Serif Display', serif;
-    }
-    
-    p, a {
-        font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-    } */
-
-    /* .mw-footer-link a {
-        @apply font-bold
-    }
-
-    .mw-footer-link {
-        @apply hover:text-gray-300
-    } */
 
 *, ::before, ::after {
   --tw-translate-x: 0;
@@ -312,20 +302,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.mr-0 {
-  margin-right: 0px;
-}
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mb-1 {
-  margin-bottom: 0.25rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 .mr-8 {
   margin-right: 2rem;
 }
-.mt-4 {
-  margin-top: 1rem;
+.mr-0 {
+  margin-right: 0px;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 .ml-4 {
   margin-left: 1rem;
@@ -379,17 +369,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center {
   justify-content: center;
 }
+.border {
+  border-width: 1px;
+}
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+.border-current {
+  border-color: currentColor;
 }
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 .bg-gray-200 {
   --tw-bg-opacity: 1;
@@ -398,19 +394,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
-.p-3 {
-  padding: 0.75rem;
-}
 .p-6 {
   padding: 1.5rem;
 }
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.p-2 {
+  padding: 0.5rem;
 }
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.p-3 {
+  padding: 0.75rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -420,9 +411,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
+}
+.pb-px {
+  padding-bottom: 1px;
+}
+.pb-1\.5 {
+  padding-bottom: 0.375rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
@@ -433,12 +438,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-8 {
   padding-bottom: 2rem;
 }
-.pb-px {
-  padding-bottom: 1px;
-}
-.pb-1\.5 {
-  padding-bottom: 0.375rem;
-}
 .pr-7 {
   padding-right: 1.75rem;
 }
@@ -448,26 +447,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .font-bold {
   font-weight: 700;
 }
 .font-medium {
   font-weight: 500;
-}
-.font-semibold {
-  font-weight: 600;
 }
 .italic {
   font-style: italic;
@@ -484,6 +483,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-mwred {
+  --tw-text-opacity: 1;
+  color: rgb(148 58 35 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -491,14 +498,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-mwslate {
   --tw-text-opacity: 1;
   color: rgb(119 130 154 / var(--tw-text-opacity));
-}
-.text-mwred {
-  --tw-text-opacity: 1;
-  color: rgb(148 58 35 / var(--tw-text-opacity));
-}
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .bi-avoid {
   -moz-column-break-inside: avoid;
@@ -523,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 @media print {
+
+  .print\:hidden {
+    display: none;
+  }
 
   .print\:bg-white {
     --tw-bg-opacity: 1;
@@ -555,12 +558,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 @media (min-width: 768px) {
 
-  .md\:mr-auto {
-    margin-right: auto;
-  }
-
   .md\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .md\:mr-auto {
+    margin-right: auto;
   }
 
   .md\:flex-row {
