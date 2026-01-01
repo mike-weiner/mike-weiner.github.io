@@ -7,23 +7,14 @@ You have found the public repository for my personal website that can be found a
 ## Tools Used to Build the Site
 
 This site is built using:
-- [Jekyll](https://jekyllrb.com) - Static site generator
-- [GitHub Pages](https://pages.github.com) - Hosting
-- [Sass/SCSS](https://sass-lang.com) - CSS preprocessing
-- [Lunr.js](https://lunrjs.com) - Client-side search
+- [GitHub Pages](https://pages.github.com)
+- [Jekyll](https://jekyllrb.com)
+- [Lunr.js](https://lunrjs.com)
+- [Sass/SCSS](https://sass-lang.com)
 
 ## Development
 
 To run the site locally:
-
-```bash
-bundle install
-bundle exec jekyll serve --livereload
-```
-
-Go to http://localhost:4000 to view the site.
-
-You can also use the included development script:
 
 ```bash
 ./bin/dev
@@ -31,11 +22,11 @@ You can also use the included development script:
 
 This will generate git metadata and start the Jekyll server with live reload.
 
+Go to http://localhost:4000 to view the site.
+
 ## Content Structure
 
-The site uses a flexible content section system configured in `_config.yml`. By default, content is organized under "Guides" but this can be renamed by updating the `content_section` settings.
-
-See [docs/RENAMING_CONTENT_SECTION.md](docs/RENAMING_CONTENT_SECTION.md) for details on customizing the content section name.
+The site uses a flexible content section system configured in `_config.yml`. By default, content is organized under "Guides" but this can be renamed by updating the `content_section` settings. See [docs/RENAMING_CONTENT_SECTION.md](docs/RENAMING_CONTENT_SECTION.md) for details on customizing the content section name.
 
 ## Credits
 
