@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# Install dependencies
+bundle install
+
+# Generate git metadata
+./bin/generate-git-data
+
+# Start Jekyll development server with live reload
+bundle exec jekyll serve --livereload

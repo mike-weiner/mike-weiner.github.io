@@ -1,0 +1,14 @@
+- title: "Guides"
+  url: /guides/
+
+- title: "GitHub"
+  url: https://github.com/mike-weiner
+  external: true
+
+- title: "LinkedIn"
+  url: https://linkedin.com/in/mike-weiner
+  external: true
+
+- title: "Thoughts"
+  url: https://world.hey.com/michael.weiner
+  external: true

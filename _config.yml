@@ -1,0 +1,44 @@
+title: "Michael Weiner"
+description: "Hi, I am Michael."
+url: https://michaelweiner.org
+image: /assets/images/opengraph.png
+github: mike-weiner
+repository: mike-weiner/mike-weiner.github.io
+
+content_section:
+  name: "Guides"
+  name_singular: "Guide"
+  path: "guides"
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+plugins:
+  - jekyll-redirect-from
+
+exclude:
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bin
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: guides
+      type: pages
+    values:
+      layout: guides
+      search: true
+
+redirect_from:
+  json: false

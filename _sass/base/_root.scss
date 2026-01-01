@@ -1,0 +1,69 @@
+:root {
+
+  --rgb-base: 247, 249, 251;
+  --rgb-base-dark: 241, 243, 245;
+  --rgb-base-darker: 235, 237, 239;
+  --rgb-base-darkest: 229, 231, 233;
+  --rgb-black: 0, 0, 0;
+  --rgb-white: 255, 255, 255;
+  --rgb-grey: 40, 50, 60;
+  --rgb-grey-light: 105, 115, 125;
+  --rgb-grey-lighter: 170, 180, 190;
+  --rgb-blue: 9, 113, 213;
+  --rgb-blue-light: 24, 128, 228;
+
+  --color-base: rgb(var(--rgb-base));
+  --color-base-dark: rgb(var(--rgb-base-dark));
+  --color-base-darker: rgb(var(--rgb-base-darker));
+  --color-base-darkest: rgb(var(--rgb-base-darkest));
+  --color-black: rgb(var(--rgb-black));
+  --color-white: rgb(var(--rgb-white));
+  --color-grey: rgb(var(--rgb-grey));
+  --color-grey-light: rgb(var(--rgb-grey-light));
+  --color-grey-lighter: rgb(var(--rgb-grey-lighter));
+  --color-blue: rgb(var(--rgb-blue));
+  --color-blue-light: rgb(var(--rgb-blue-light));
+
+  --font-family: 'Inter', Sans-Serif;
+  --font-family-mono: ui-monospace, 'SFMono-Regular', SF Mono, Menlo, Consolas, Monospace;
+
+  --font-size: min(calc(1.3em + 1vw), 2.5rem);
+  --font-size-xx-small: 50%;
+  --font-size-x-small: 60%;
+  --font-size-small: 75%;
+  --font-size-medium: 100%;
+  --font-size-large: 115%;
+  --font-size-x-large: 135%;
+  --font-size-xx-large: 180%;
+  --font-size-xxx-large: 250%;
+
+  --line-height: 1.4;
+
+  --space-small: 0.5em;
+  --space-medium: 1em;
+  --space-large: 2em;
+  --space-x-large: 3em;
+  --space-xx-large: 4em;
+
+  --transition: 0.15s ease;
+  --transition-slow: 0.3s ease;
+
+}
+
+@media(prefers-color-scheme: dark) {
+
+  :root {
+    --rgb-base: 4, 6, 8;
+    --rgb-base-dark: 3, 19, 34;
+    --rgb-base-darker: 5, 63, 118;
+    --rgb-base-darkest: var(--rgb-base-darker);
+    --rgb-grey: 236, 239, 244;
+    --rgb-grey-light: 241, 244, 249;
+    --rgb-blue: 65, 146, 223;
+    --rgb-blue-light: 121, 179, 233;
+    --color-base-dark: var(--color-base);
+    --color-black: rgb(var(--rgb-white));
+    --color-white: rgb(var(--rgb-base-dark));
+  }
+
+}

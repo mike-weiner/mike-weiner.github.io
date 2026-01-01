@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Generate git metadata for local builds
+
+mkdir -p _data
+
+cat > _data/git.yml << EOF
+commit: $(git rev-parse --short HEAD 2>/dev/null || echo "dev")
+commit_long: $(git rev-parse HEAD 2>/dev/null || echo "development")
+EOF
