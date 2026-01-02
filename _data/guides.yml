@@ -1,5 +1,8 @@
-# Add your guides here as you create them
-# Example format:
-# - title: "Guide Title"
-#   url: /guides/guide-name/
-
+- title: "Miscellaneous"
+  url: /guides/miscellaneous/
+  index: true
+  sections:
+    - title: "Overview"
+      url: /guides/miscellaneous/overview/
+    - title: "Install Previous Homebrew Formula"
+      url: /guides/miscellaneous/install-pervious-homebrew-formula/
